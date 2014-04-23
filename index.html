@@ -1,15 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Data Driven Music Machine</title>
+    <meta charset="UTF-8">
+    <title>JukeRox</title>
+
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700|Homemade+Apple' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-
-<link rel="stylesheet" href="stylesheets/style.css"/>
-
 <body>
+<div class="container">
 
+    <!-- Static navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand primary-color-text" href="#">JukeRox</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Now Playing</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Albums</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+
+    <!-- Currently Playing Son information will appear here -->
+    <div class="jumbotron">
+        <div id="trackInfo">
+            <h2>Now Playing: </h2>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="back">Previous</button>
+        <button type="button" class="btn btn-danger" id="stop">Stop</button>
+        <button type="button" class="btn btn-success" id="play">Play</button>
+        <button type="button" class="btn btn-primary" id="next">Next</button>
+
+        <audio  id="myAudio">
+            <source  src="sounds/ohOne.mp3"  type="audio/mp3">
+        </audio>
+    </div>
+</div>
 
 <script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/handlebars.min.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
