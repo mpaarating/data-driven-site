@@ -122,8 +122,13 @@ $('ul.nav li').click( function() {
         $('li a').click(function(event){
             event.preventDefault();
 
-            $('.content').load($(this).attr('id') + '.html');
-            window.location.hash = $(this).attr('id');
+            if ($(this).attr('id') + '.html' == "index.html"){
+                $('.content').html("");
+                window.location.hash = "";
+            } else {
+                $('.content').load($(this).attr('id') + '.html');
+                window.location.hash = $(this).attr('id');
+            }
         });
     });
 })(jQuery);

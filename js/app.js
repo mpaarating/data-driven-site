@@ -1,6 +1,7 @@
-function PostsCtrlAjax($scope, $http) {
+/*
+function jukeroxApp($scope, $http) {
     $http({method: 'POST', url: 'data/data.json'}).success(function(data)
     {
-        $scope.posts = data; // response data
+        $scope.tracks = data; // response data
     });
-}
+}*/
