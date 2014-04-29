@@ -1,7 +1,12 @@
-<div ng-controller="artistListCtrl">
-    <ul>
-        <li ng-repeat=" track in tracks">
-            {{track.artist}}
-        </li>
-    </ul>
-</div>
+
+    <div ng-controller="artistListCtrl">
+        <div><input ng-model="search.artist" type="text" placeholder="Search Artists"><span class="glyphicon glyphicon-search"></span></div>
+        <ul>
+            <li ng-repeat="track in tracks | filter:search:strict">
+                {{track.artist}}
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="js/controller.js"></script>
