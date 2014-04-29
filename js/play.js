@@ -1,9 +1,3 @@
-/**
- * Created by mpaarating on 4/22/14.
- */
-/**
- * Created by Alex Lewis on 4/8/14.
- */
 
 var myAudio = document.getElementById('myAudio');
 
@@ -19,15 +13,13 @@ $.getJSON(" data/data.json", function( data ){
     var songDuration = Math.round(myAudio.duration * 100);
     var progressBarWidth = Math.round((Math.round(myAudio.currentTime * 100))/(Math.round(myAudio.duration *100))*100) + "%";
 
-    if (i > 2){
-        $(this).click(function (e){
-            e.preventdefault();
-            console.log("stopped");
-        });
-    }
-
     function playNext(){
         i ++;
+
+        if (i >= data.tracks.length){
+            i = data.tracks.length - 1;
+        }
+
         $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album );
         $(".album-art").attr({
             src: data.tracks[i].cover,
@@ -88,15 +80,21 @@ $.getJSON(" data/data.json", function( data ){
 
     setInterval(function() {
         var progressBarWidth = ((Math.round(myAudio.currentTime * 100))/(Math.round(myAudio.duration *100))*100).toFixed(2) + "%";
-        var minutes = Math.floor(((myAudio.duration)-(myAudio.currentTime))/60);
-        var seconds = Math.floor(((myAudio.duration)-(myAudio.currentTime))-(minutes*60)).toFixed(0);
-        var timeRemaining = minutes + ":" + seconds;
+        var minutes = Math.floor(((myAudio.duration - 35)-(myAudio.currentTime))/60);
+        var seconds = Math.floor(((myAudio.duration - 35)-(myAudio.currentTime))-(minutes*60)).toFixed(0);
+        var strSeconds = seconds;
+
+        if (seconds < 10) {
+            strSeconds = "0" + seconds;
+        }
+
+        var timeRemaining = minutes + ":" + strSeconds;
+
         if(isPlaying){
             $(".progress-bar").css("width", progressBarWidth);
             $(".timeLeft").html(timeRemaining);
-            console.log(myAudio.duration);
         }
-    }, 500);
+    }, 1000);
 
     myAudio.addEventListener('ended', function(event) {
         $.getJSON( "data/data.json", function( data ) {
@@ -105,4 +103,28 @@ $.getJSON(" data/data.json", function( data ){
         });
     })
 })
+
+//places active state on nav buttons when clicked
+$('ul.nav li').click( function() {
+    $(this).addClass('active').siblings().removeClass('active');
+});
+
+// ==== Begin AJAX requests ====
+
+(function($){
+    if(window.location.hash[0] == '#') {
+        var hash = 'a' + window.location.hash;
+        $(hash).click();
+    }
+
+    $(document).ready(function(){
+
+        $('li a').click(function(event){
+            event.preventDefault();
+
+            $('.content').load($(this).attr('id') + '.html');
+            window.location.hash = $(this).attr('id');
+        });
+    });
+})(jQuery);
 
