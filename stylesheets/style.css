@@ -4995,3 +4995,7 @@ body {
 
 .navbar-default .navbar-brand {
   color: #428bca; }
+
+.album-art {
+  width: 120px;
+  height: 120px; }

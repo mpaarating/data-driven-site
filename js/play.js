@@ -1,0 +1,108 @@
+/**
+ * Created by mpaarating on 4/22/14.
+ */
+/**
+ * Created by Alex Lewis on 4/8/14.
+ */
+
+var myAudio = document.getElementById('myAudio');
+
+$.getJSON(" data/data.json", function( data ){
+    var i = 0;
+
+    var previousSong = $("#back");
+    var nextSong = $("#next");
+    var stopSong = $("#stop");
+    var playSong = $("#play");
+    var isPlaying = false;
+    var currentPlayTime = Math.round(myAudio.currentTime * 100);
+    var songDuration = Math.round(myAudio.duration * 100);
+    var progressBarWidth = Math.round((Math.round(myAudio.currentTime * 100))/(Math.round(myAudio.duration *100))*100) + "%";
+
+    if (i > 2){
+        $(this).click(function (e){
+            e.preventdefault();
+            console.log("stopped");
+        });
+    }
+
+    function playNext(){
+        i ++;
+        $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album );
+        $(".album-art").attr({
+            src: data.tracks[i].cover,
+            alt: data.tracks[i].album
+        });
+        myAudio.src=(data.songs[i]);
+        myAudio.load();
+        $('.progress').html('<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 0">' + '</div>')
+        myAudio.play();
+        isPlaying = true;
+    }
+
+    function playPrevious(){
+        i --;
+        $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
+        $(".album-art").attr({
+            src: data.tracks[i].cover,
+            alt: data.tracks[i].album
+        });
+        myAudio.src=(data.songs[i]);
+        myAudio.load();
+        $('.progress').html('<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 0">' + '</div>')
+        myAudio.play();
+        isPlaying = true;
+    }
+
+    playSong.click(function(){
+        $.getJSON( "data/data.json", function( data ) {
+            $(".album-title").html( data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
+            $(".album-art").attr({
+                src: data.tracks[i].cover,
+                alt: data.tracks[i].album
+            });
+            myAudio.src=(data.songs[i]);
+            myAudio.load();
+            $('.progress').html('<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 0">' + '</div>');
+            myAudio.play();
+            isPlaying = true;
+        });
+    })
+
+    stopSong.click(function(){
+        myAudio.pause();
+        isPlaying = false;
+    })
+
+    nextSong.click(function(){
+        $.getJSON( "data/data.json", function( data ) {
+            playNext();
+        });
+    });
+
+    previousSong.click(function(){
+        $.getJSON( "data/data.json", function( data ) {
+            playPrevious();
+        });
+    })
+
+    setInterval(function() {
+        var progressBarWidth = ((Math.round(myAudio.currentTime * 100))/(Math.round(myAudio.duration *100))*100).toFixed(2) + "%";
+        var minutes = Math.floor(((myAudio.duration)-(myAudio.currentTime))/60);
+        var seconds = Math.floor(((myAudio.duration)-(myAudio.currentTime))-(minutes*60)).toFixed(0);
+        var timeRemaining = minutes + ":" + seconds;
+        if(isPlaying){
+            $(".progress-bar").css("width", progressBarWidth);
+            $(".timeLeft").html(timeRemaining);
+            console.log(myAudio.duration);
+        }
+    }, 500);
+
+    myAudio.addEventListener('ended', function(event) {
+        $.getJSON( "data/data.json", function( data ) {
+            $(".album-title").html(+ data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
+            playNext();
+        });
+    })
+})
+
