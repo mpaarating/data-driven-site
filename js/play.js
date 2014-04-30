@@ -34,6 +34,11 @@ $.getJSON(" data/data.json", function( data ){
 
     function playPrevious(){
         i --;
+
+        if (i <= 0){
+            i = 0;
+        }
+
         $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
         $(".album-art").attr({
             src: data.tracks[i].cover,
