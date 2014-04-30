@@ -109,27 +109,4 @@ $('ul.nav li').click( function() {
     $(this).addClass('active').siblings().removeClass('active');
 });
 
-// ==== Begin AJAX requests ====
-
-(function($){
-    if(window.location.hash[0] == '#') {
-        var hash = 'a' + window.location.hash;
-        $(hash).click();
-    }
-
-    $(document).ready(function(){
-
-        $('li a').click(function(event){
-            event.preventDefault();
-
-            if ($(this).attr('id') + '.html' == "index.html"){
-                $('.content').html("");
-                window.location.hash = "";
-            } else {
-                $('.content').load($(this).attr('id') + '.html');
-                window.location.hash = $(this).attr('id');
-            }
-        });
-    });
-})(jQuery);
 

@@ -1,24 +1,20 @@
-angular.module('jukeroxApp')
-    .controller('artistListCtrl', ['$scope', function($scope){
-        $scope.tracks =
-            [
-                {
-                    "title": "Pro Nails",
-                    "artist": "Kid Sister",
-                    "album": "Rusko Remix Album",
-                    "cover": "images/album-cover.jpg"
-                },
-                {
-                    "title": "Dutch Flowerz",
-                    "artist": "Skream",
-                    "album": "Rusko Remix Album",
-                    "cover": "images/album-cover.jpg"
-                },
-                {
-                    "title": "Feelings Gone",
-                    "artist": "Bassment Jaxx",
-                    "album": "Rusko Remix Album",
-                    "cover": "images/album-cover.jpg"
-                }
-            ];
-    }]);
+.controller('mainCtrl', ['$scope', function($scope){
+    $scope.template = { url: '' };
+
+    $scope.links = [
+        {label: 'Artist', url: 'template/artists.html'},
+        {label: 'Album', url: 'template/album.html'},
+        {label: 'Search', url: 'template/search.html'}
+    ]
+}])
+    .controller('listController', ['$scope', 'TracksService', function($scope, TracksService){
+        $scope.tracks = TracksService.query({}, function(d){}, function(d){});
+    }])
+    .controller('radioController', ['$scope', function($scope){
+        $scope.items = [
+            {name: 'Item 1'},
+            {name: 'Item 3'},
+            {name: 'Item 2'}
+        ];
+    }])
+

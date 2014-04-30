@@ -18,7 +18,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-resource.min.js"></script>
 
 </head>
-<body ng-app="jukeroxApp">
+<body ng-app="jukeroxApp" ng-controller="mainCtrl">
 <div class="container">
 
     <!-- Static navbar -->
@@ -34,9 +34,8 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="" id="index">Now Playing</a></li>
-                <li><a href="" id="artists">Artists</a></li>
-                <li><a href="" id="albums">Albums</a></li>
+                <li ng-repeat="link in links"><a href="#" ng-click="template.url=link.url">{{link.label}}</a></li>
+
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -97,14 +96,14 @@
         </audio>
 
         <div class="container">
-            <div class="content">
-
-            </div>
+            <div class="row" ng-include="template.url"></div>
         </div>
     </div>
 </div>
 
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
 <script src="js/play.js"></script>
 
 </body>
