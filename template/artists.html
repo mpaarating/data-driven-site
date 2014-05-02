@@ -2,20 +2,15 @@
     <div class="row">
         Artist <input type="text" ng-model="search.artist">
     </div>
-    <!--
-    <ul>
-        <li ng-repeat="track in tracks | filter:search:strict">{{track.title}} - {{track.artist}}</li>
-    </ul>
-    -->
-
+    <br/>
     <div class="row">
         <div class="col-md-4" ng-repeat="artist in artists | filter:search:strict">
             <div class="thumbnail">
-                <img src="{{artistPic}}" alt="{{artist}}" data-src="{{artistPic}}">
+                <img ng-src="{{artist.artistPic}}" alt="{{artist.artist}}" data-src="{{artist.artistPic}}">
                 <div class="caption">
-                    <strong>{{artist}}</strong><br>
-                    <em>{{genre}}</em>
-                    <p class="text-muted">{{bio}}</p>
+                    <strong>{{artist.artist}}</strong><br>
+                    <em>{{artist.genre}}</em>
+                    <p class="text-muted">{{artist.bio}}</p>
                 </div>
             </div>
         </div>

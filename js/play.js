@@ -1,7 +1,7 @@
 
 var myAudio = document.getElementById('myAudio');
 
-$.getJSON(" data/data.json", function( data ){
+$.getJSON(" data/artists.json", function( data ){
     var i = 0;
 
     var previousSong = $("#back");

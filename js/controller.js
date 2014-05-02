@@ -8,8 +8,8 @@ angular.module('jukeroxApp')
             {label: 'Search', url: 'template/search.html'}
         ]
     }])
-        .controller('listController', ['$scope', 'TracksService', function($scope, TracksService){
-            $scope.tracks = TracksService.query({}, function(d){}, function(d){});
+        .controller('listController', ['$scope', 'TracksService', function($scope, ArtistsService){
+            $scope.artists = ArtistsService.query({}, function(d){}, function(d){});
         }])
         .controller('radioController', ['$scope', function($scope){
             $scope.items = [
