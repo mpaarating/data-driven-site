@@ -1,4 +1,7 @@
 angular.module('jukeroxApp', ['ngResource'])
-    .factory('TracksService', ['$resource', function($resource){
-        return $resource('data/artists.json', {}, {});
+    .factory('ArtistsService', ['$resource', function($resource){
+        return $resource('json/artists.json', {}, {});
+    }])
+    .factory('AlbumsService', ['$resource', function($resource){
+        return $resource('json/albums.json', {}, {});
     }])

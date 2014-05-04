@@ -3,19 +3,14 @@ angular.module('jukeroxApp')
         $scope.template = { url: '' };
 
         $scope.links = [
-            {label: 'Artist', url: 'template/artists.html'},
-            {label: 'Album', url: 'template/album.html'},
-            {label: 'Search', url: 'template/search.html'}
+            {label: 'Artists', url: 'template/artists.html'},
+            {label: 'Albums', url: 'template/albums.html'},
+            {label: 'Tracks', url: 'template/tracks.html'}
         ]
     }])
-        .controller('listController', ['$scope', 'TracksService', function($scope, ArtistsService){
+        .controller('ArtistCtrl', ['$scope', 'ArtistsService', function($scope, ArtistsService){
             $scope.artists = ArtistsService.query({}, function(d){}, function(d){});
         }])
-        .controller('radioController', ['$scope', function($scope){
-            $scope.items = [
-                {name: 'Item 1'},
-                {name: 'Item 3'},
-                {name: 'Item 2'}
-            ];
+        .controller('AlbumCtrl', ['$scope', 'AlbumsService', function($scope, AlbumsService){
+            $scope.albums = AlbumsService.query({}, function(d){}, function(d){});
         }])
-

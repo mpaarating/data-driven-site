@@ -14,3 +14,11 @@ body {
   width: 120px;
   height: 120px;
 }
+
+.scroll {
+  overflow-y: auto;
+  height: 400px;
+  img {
+    max-height: 250px;
+  }
+}

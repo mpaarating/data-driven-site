@@ -1,12 +1,14 @@
-<div ng-controller="listController">
+<div ng-controller="artistCtrl">
     <div class="row">
-        Artist <input type="text" ng-model="search.artist">
+        <div class="col-lg-12">
+            Search For Artists <input type="text" ng-model="search.artist">
+        </div>
     </div>
     <br/>
     <div class="row">
         <div class="col-md-4" ng-repeat="artist in artists | filter:search:strict">
-            <div class="thumbnail">
-                <img ng-src="{{artist.artistPic}}" alt="{{artist.artist}}" data-src="{{artist.artistPic}}">
+            <div class="thumbnail scroll">
+                <img class="img-responsive" src="{{artist.picture}}" alt="{{artist.artist}}">
                 <div class="caption">
                     <strong>{{artist.artist}}</strong><br>
                     <em>{{artist.genre}}</em>

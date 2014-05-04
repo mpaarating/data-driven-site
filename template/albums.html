@@ -1,0 +1,22 @@
+<div ng-controller="AlbumCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            Search For Albums <input type="text" ng-model="search.artists">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-4" ng-repeat="album in albums | filter:search:strict">
+            <div class="thumbnail scroll">
+                <img src="{{album.albums.cover}}" alt="{{album.albumName}}">
+                <div class="caption">
+                    <strong>{{album.artist}}</strong><br>
+                    <em>{{artist.genre}}</em>
+                    <ul>
+                        <li ng-repeat="track in tracks">{{track.albums.trackTitles}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

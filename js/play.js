@@ -1,7 +1,7 @@
 
 var myAudio = document.getElementById('myAudio');
 
-$.getJSON(" data/artists.json", function( data ){
+$.getJSON(" data/artists.json", function( artists ){
     var i = 0;
 
     var previousSong = $("#back");
@@ -16,16 +16,16 @@ $.getJSON(" data/artists.json", function( data ){
     function playNext(){
         i ++;
 
-        if (i >= data.tracks.length){
-            i = data.tracks.length - 1;
+        if (i >= artists.albums.source.length){
+            i = artists.albums.source.length - 1;
         }
 
         $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album );
         $(".album-art").attr({
-            src: data.tracks[i].cover,
-            alt: data.tracks[i].album
+            src: artists.albums.cover,
+            alt: artists.albums.albumName
         });
-        myAudio.src=(data.songs[i]);
+        myAudio.src=(artists.albums.source[i]);
         myAudio.load();
         $('.progress').html('<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 0">' + '</div>')
         myAudio.play();
@@ -41,10 +41,10 @@ $.getJSON(" data/artists.json", function( data ){
 
         $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
         $(".album-art").attr({
-            src: data.tracks[i].cover,
-            alt: data.tracks[i].album
+            src: artists.albums.cover,
+            alt: artists.albums.albumName
         });
-        myAudio.src=(data.songs[i]);
+        myAudio.src=(artists.albums.source[i]);
         myAudio.load();
         $('.progress').html('<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 0">' + '</div>')
         myAudio.play();
@@ -52,8 +52,8 @@ $.getJSON(" data/artists.json", function( data ){
     }
 
     playSong.click(function(){
-        $.getJSON( "data/data.json", function( data ) {
-            $(".album-title").html( data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
+        $.getJSON( "data/artists.json", function( artists ) {
+            $(".album-title").html( artists.albums.trackTitles[i] + " by " + artists.artist + " on " + artists.ablums.albumName);
             $(".album-art").attr({
                 src: data.tracks[i].cover,
                 alt: data.tracks[i].album
@@ -72,13 +72,13 @@ $.getJSON(" data/artists.json", function( data ){
     })
 
     nextSong.click(function(){
-        $.getJSON( "data/data.json", function( data ) {
+        $.getJSON( "data/artists.json", function( data ) {
             playNext();
         });
     });
 
     previousSong.click(function(){
-        $.getJSON( "data/data.json", function( data ) {
+        $.getJSON( "data/artists.json", function( data ) {
             playPrevious();
         });
     })
@@ -102,8 +102,8 @@ $.getJSON(" data/artists.json", function( data ){
     }, 1000);
 
     myAudio.addEventListener('ended', function(event) {
-        $.getJSON( "data/data.json", function( data ) {
-            $(".album-title").html(+ data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album);
+        $.getJSON( "data/artists.json", function( artists ) {
+            $(".album-title").html(artists.albums.trackTitles[i] + " by " + artists.artist + " on " + artists.ablums.albumName);
             playNext();
         });
     })
