@@ -5006,5 +5006,14 @@ body {
   .scroll img {
     max-height: 250px; }
 
-li {
+ul li {
+  list-style-type: none; }
+
+ol li {
   list-style-type: decimal-leading-zero; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }

@@ -1,0 +1,17 @@
+<div ng-controller="GenreCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            Search For Genres <input type="text" ng-model="search.genre">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-3" ng-repeat="genreType in genreTypes | filter:search:strict">
+            <div class="thumbnail">
+                <ul>
+                    <li ng-repeat="track in genreType.tracks"><span>{{track.tracks.title}}</span> by {{track.artist}} on {{track.name}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

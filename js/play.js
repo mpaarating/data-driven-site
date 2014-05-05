@@ -1,7 +1,7 @@
 
 var myAudio = document.getElementById('myAudio');
 
-$.getJSON(" data/artists.json", function( artists ){
+$.getJSON(" data/albums.json", function( albums ){
     var i = 0;
 
     var previousSong = $("#back");
@@ -16,8 +16,8 @@ $.getJSON(" data/artists.json", function( artists ){
     function playNext(){
         i ++;
 
-        if (i >= artists.albums.source.length){
-            i = artists.albums.source.length - 1;
+        if (i >= albums.tracks.src.length){
+            i = albums.tracks.src.length - 1;
         }
 
         $(".album-title").html(data.tracks[i].title + " by " + data.tracks[i].artist + " on " + data.tracks[i].album );
