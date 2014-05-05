@@ -8,8 +8,17 @@
     <div class="row">
         <div class="col-md-3" ng-repeat="genreType in genreTypes | filter:search:strict">
             <div class="thumbnail">
-                <ul>
-                    <li ng-repeat="track in genreType.tracks"><span>{{track.tracks.title}}</span> by {{track.artist}} on {{track.name}}</li>
+                <h2 class="text-center text-primary">{{genreType.genre}}</h2>
+                <ul class="padding-5">
+                    <div ng-repeat="album in genreType.albums">
+                        <img class="img-responsive" src="{{album.cover}}" alt="album.name"/>
+                        <strong>{{album.artist}}</strong><br>
+                        <em>{{album.name}}</em>
+                        <ol>
+                           <li ng-repeat="track in album.tracks">{{track.title}}</li>
+                        </ol>
+                        <hr/>
+                    </div>
                 </ul>
             </div>
         </div>

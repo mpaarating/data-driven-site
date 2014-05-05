@@ -19,5 +19,5 @@ angular.module('jukeroxApp')
             $scope.tracks = TrackService.query({}, function(d){}, function(d){});
         }])
         .controller('GenreCtrl', ['$scope', 'GenreService', function($scope, GenreService){
-            $scope.tracks = GenreService.query({}, function(d){}, function(d){});
+            $scope.genreTypes = GenreService.query({}, function(d){}, function(d){});
         }])
