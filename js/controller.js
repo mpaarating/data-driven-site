@@ -103,9 +103,9 @@ angular.module('jukeroxApp')
                 this.play_track();
             },
             play_track: function(){
-                if(this.master[this.queue].hasOwnProperty('artist')){
-                    // TODO: Add cover URL to tracks.json;
-                    this.set_details(this.master[this.queue].album, '', this.master[this.queue].artist);
+                if(this.master[this.queue].artist){
+                    this.set_details(this.master[this.queue].name, this.master[this.queue].cover, this.master[this.queue].artist);
+                    console.log("hi");
                 }
                 $scope.player.play(this.master[this.queue]);
             },
@@ -130,8 +130,7 @@ angular.module('jukeroxApp')
         });
         $scope.$on('play.track', function(event, params){
             $scope.track_queue.set_master(params.tracks);
-            songIndex = params.tracks.indexOf(track);
-            $scope.track_queue.queue = songIndex;
+            $scope.track_queue.queue = params.track;
             $scope.track_queue.play_track();
         });
     }])

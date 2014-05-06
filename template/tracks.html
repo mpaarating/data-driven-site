@@ -1,14 +1,14 @@
 <div ng-controller="TrackCtrl">
     <div class="row">
         <div class="col-lg-12">
-            Search For Tracks <input type="text" ng-model="search.name">
+            Search For Tracks <input type="text" ng-model="search.title">
         </div>
     </div>
     <br/>
     <div class="row">
         <div class="col-md-12">
             <ul>
-                <li ng-repeat="track in tracks | filter:search:strict"><h4 ng-click="play_track(track)" class="text-primary">{{track.name}}</h4> By <strong>{{track.artist}}</strong> on <em>{{track.album}}</em></li>
+                <li ng-repeat="track in tracks track by $index | filter:search:strict"><h4 ng-click="play_track($index)" class="text-primary">{{track.title}}</h4> By <strong>{{track.artist}}</strong> on <em>{{track.name}}</em></li>
             </ul>
         </div>
     </div>
