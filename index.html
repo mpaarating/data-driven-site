@@ -50,10 +50,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <img class="album-art img-responsive" src="" alt=""/>
+                    <img class="album-art img-responsive" src="{{currently_playing.cover}}" alt="{{currently_playing.title}}"/>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                    <h3 class="album-title text-primary"></h3>
+                    <h3 class="album-title text-primary">{{currently_playing.title}}</h3>
+                    <strong>{{currently_playing.artist}}</strong><br/>
+                    <em>{{currently_playing.albumName}}</em>
                 </div>
             </div>
         </div>
@@ -73,28 +75,28 @@
         <div class="row">
             <div class="col-lg-1 col-lg-offset-4 col-md-1 col-md-offset-4 col-sm-1 col-sm-offset-4 col-xs-1 col-xs-offset-4">
                 <button class="btn btn-primary">
-                <span class="glyphicon glyphicon-step-backward"  id="back"></span>
+                <span class="glyphicon glyphicon-step-backward"  id="back" ng-click="currently_playing.prev()"></span>
                 </button>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                 <button class="btn btn-danger">
-                <span  class="glyphicon glyphicon-stop" id="stop"></span>
+                <span  class="glyphicon glyphicon-stop" id="stop" ng-click="currently_playing.stop()"></span>
                 </button>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                 <button class="btn btn-primary">
-                <span class="glyphicon glyphicon-play" id="play"></span>
+                <span class="glyphicon glyphicon-play" id="play" ng-click="currently_playing.play()"></span>
                 </button>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                 <button class="btn btn-primary">
-                <span class="glyphicon glyphicon-step-forward" id="next"></span>
+                <span class="glyphicon glyphicon-step-forward" id="next" ng-click="currently_playing.next()"></span>
                 </button>
             </div>
         </div>
 
         <audio  id="myAudio">
-            <source  src="alexmlewis.com/school/n222/songs/a_tribe_called_quest/peoples_instinctive_travels/1_push_it_along.mp3"  type="audio/mp3">
+            <source  src="{{currently_playing.src}}"  type="audio/mp3">
         </audio>
     </div>
     <div class="container">
@@ -105,7 +107,6 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controller.js"></script>
-<script src="js/play.js"></script>
 
 </body>
 </html>

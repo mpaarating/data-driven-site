@@ -4997,8 +4997,9 @@ body {
   color: #428bca; }
 
 .album-art {
-  width: 120px;
-  height: 120px; }
+  width: 140px;
+  height: 140px;
+  margin: 0 auto; }
 
 .scroll {
   overflow-y: auto;
