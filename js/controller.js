@@ -1,5 +1,5 @@
 angular.module('jukeroxApp')
-    .controller('mainCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
+    .controller('mainCtrl', ['$scope', '$rootScope', '$interval', function($scope, $rootScope, $interval){
 
         /* Event handler plugin, credit Jim Poulakos https://github.com/jimpoulakos */
 
@@ -75,16 +75,33 @@ angular.module('jukeroxApp')
                 this.audio_element.pause();
                 this.audio_element.src = track.src;
                 this.audio_element.play();
+                this.stop_update();
+                this.update();
             },
             stop: function(){
                 this.audio_element.pause();
+                if(angular.isDefined(this.interval)){
+                    $interval.cancel(this.interval);
+                    this.interval = undefined;
+                }
             },
-            interval: {},
+            interval: undefined,
             update: function(){
-                // TODO: Add $interval to allow checking playtime
+                this.interval = $interval(function() {
+                    var progressBarWidth = ((Math.round(this.audio_element.currentTime * 100))/(Math.round(this.audio_element.duration *100))*100).toFixed(2) + "%";
+                    var minutes = Math.floor(((this.audio_element.duration - 35)-(this.audio_element.currentTime))/60);
+                    var seconds = Math.floor(((this.audio_element.duration - 35)-(this.audio_element.currentTime))-(minutes*60)).toFixed(0);
+                    var strSeconds = seconds;
+                    if (seconds < 10) {
+                        strSeconds = "0" + seconds;
+                    }
+                    var timeRemaining = minutes + ":" + strSeconds;
+                    $(".progress-bar").css("width", progressBarWidth);
+                    $(".timeLeft").html(timeRemaining);
+                }.bind(this), 1000);
             },
             stop_update: function(){
-                // TODO: Clear $interval
+                $interval.cancel(this.interval);
             }
         };
 
@@ -105,7 +122,6 @@ angular.module('jukeroxApp')
             play_track: function(){
                 if(this.master[this.queue].artist){
                     this.set_details(this.master[this.queue].name, this.master[this.queue].cover, this.master[this.queue].artist);
-                    console.log("hi");
                 }
                 $scope.player.play(this.master[this.queue]);
             },
@@ -151,7 +167,9 @@ angular.module('jukeroxApp')
         $scope.tracks = TrackService.query({}, function(d){}, function(d){});
 
         $scope.play_track = function(track){
-            $scope.$emit('play.track', {track: track, tracks: $scope.tracks});
+            var len = $scope.tracks.length;
+            while (len--) if($scope.tracks[len].id == track.id) break;
+            $scope.$emit('play.track', {track: len, tracks: $scope.tracks});
         }
     }])
     .controller('GenreCtrl', ['$scope', 'GenreService', function($scope, GenreService){
