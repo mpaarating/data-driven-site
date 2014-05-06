@@ -2,6 +2,7 @@
     {
         "name":"God Is Saying This To You",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/113\/962\/11396249\/600x600.jpg",
+        "genre": "Rock",
         "tracks":[
             {
                 "title":"God Is Saying This To You",
@@ -57,6 +58,7 @@
     {
         "name":"Hold On",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/113\/734\/11373424\/600x600.jpg",
+        "genre": "Electronic",
         "tracks":[
             {
                 "title":"Hold On",
@@ -68,6 +70,7 @@
     {
         "name":"Krush",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/108\/134\/10813483\/600x600.jpg",
+        "genre": "Electronic",
         "tracks":[
             {
                 "title":"I Am 300 Tag",
@@ -87,6 +90,7 @@
     {
         "name":"Magic",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/148\/097\/14809781\/600x600.jpg",
+        "genre": "Pop",
         "tracks":[
             {
                 "title":"Magic",
@@ -98,6 +102,7 @@
     {
         "name":"Peoples' Instinctive Travels & the Paths of Rhythm",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/114\/785\/11478587\/600x600.jpg",
+        "genre": "Hip-Hop",
         "tracks":[
             {
                 "title":"Push It Along",
@@ -161,6 +166,7 @@
     {
         "name":"South London Boroughs EP",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/109\/779\/10977951\/600x600.jpg",
+        "genre": "Electronic",
         "tracks":[
             {
                 "title":"South London Boroughs",
@@ -172,6 +178,7 @@
     {
         "name":"Tally All The Things That You Broke",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/144\/392\/14439253\/600x600.jpg",
+        "genre": "Rock",
         "tracks":[
             {
                 "title":"You've Got Me Wonderin' Now",
@@ -199,6 +206,7 @@
     {
         "name":"The Big Come Up",
         "cover":"http:\/\/images.emusic.com\/music\/images\/album\/117\/189\/11718929\/600x600.jpg",
+        "genre": "Rock",
         "tracks":[
             {
                 "title":"Busted",
@@ -214,6 +222,7 @@
     {
         "name":"Turn Down For What?",
         "cover":"http:\/\/kamp.arizona.edu\/files\/dj-snake-lil-jon-turn-down-for-what.jpg?1391069914",
+        "genre": "Electronic",
         "tracks":[
             {
                 "title":"Turn Down For What?",
