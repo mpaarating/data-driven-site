@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-12">
             <ul>
-                <li ng-repeat="track in tracks | filter:search:strict"><h4 class="text-primary">{{track.name}}</h4> By <strong>{{track.artist}}</strong> on <em>{{track.album}}</em></li>
+                <li ng-repeat="track in tracks | filter:search:strict"><h4 ng-click="play_track(track)" class="text-primary">{{track.name}}</h4> By <strong>{{track.artist}}</strong> on <em>{{track.album}}</em></li>
             </ul>
         </div>
     </div>

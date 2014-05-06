@@ -1,6 +1,7 @@
 <div ng-controller="AlbumCtrl">
     <div class="row">
         <div class="col-lg-12">
+            <h3>Select an album to begin playback</h3>
             Search For Albums <input type="text" ng-model="search.name">
         </div>
     </div>
@@ -8,11 +9,11 @@
     <div class="row">
         <div class="col-md-4" ng-repeat="album in albums | filter:search:strict">
             <div class="thumbnail scroll">
-                <img src="{{album.cover}}" alt="{{album.albumName}}">
+                <img ng-click="play_album(album)" src="{{album.cover}}" alt="{{album.albumName}}">
                 <div class="caption">
                     <strong>{{album.artist}}</strong><br>
                     <a href="#" ng-click="genre_clicked(album.genre)"><strong>{{album.genre}}</strong></a><br/>
-                    <em ng-click="play_album(album)">{{album.name}}</em>
+                    <em>{{album.name}}</em>
                     <br/>
                     <ol>
                         <li ng-repeat="track in album.tracks">{{track.title}}</li>

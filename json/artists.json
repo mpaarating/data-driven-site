@@ -9,59 +9,59 @@
                 "tracks":[
                     {
                         "title":"Push It Along",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/1_push_it_along.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/1_push_it_along.mp3"
                     },
                     {
                         "title":"Luck of Lucian",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/2_luck_of_lucien.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/2_luck_of_lucien.mp3"
                     },
                     {
                         "title":"After Hours",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/3_after_hours.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/3_after_hours.mp3"
                     },
                     {
                         "title":"Footprints",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/4_footprints.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/4_footprints.mp3"
                     },
                     {
                         "title":"I Left My Wallet In El Segundo",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/5_i_left_my_wallet_in_el_segundo.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/5_i_left_my_wallet_in_el_segundo.mp3"
                     },
                     {
                         "title":"Pubic Enemy",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/6_pubic_enemy.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/6_pubic_enemy.mp3"
                     },
                     {
                         "title":"Bonita Applebum",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/7_bonita_applebum.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/7_bonita_applebum.mp3"
                     },
                     {
                         "title":"Can I Kick It?",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/8_can_I_kick_it.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/8_can_I_kick_it.mp3"
                     },
                     {
                         "title":"Youthful Expression",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/9_youthful_expression.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/9_youthful_expression.mp3"
                     },
                     {
                         "title":"Rhythm (Devoted To The Art of Moving Butts)",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/10_rhythm.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/10_rhythm.mp3"
                     },
                     {
                         "title":"Mr. Muhammad",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/11_mr_muhammad.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/11_mr_muhammad.mp3"
                     },
                     {
                         "title":"Ham 'N' Eggs",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/12_ham_n_eggs.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/12_ham_n_eggs.mp3"
                     },
                     {
                         "title":"Go Ahead In The Rain",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/13_go_ahead_in_the_rain.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/13_go_ahead_in_the_rain.mp3"
                     },
                     {
                         "title":"Description Of A Fool",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/14_description_of_a_fool.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/a_tribe_called_quest\/peoples_instinctive_travels\/14_description_of_a_fool.mp3"
                     }
                 ],
                 "name":"Peoples' Instinctive Travels & the Paths of Rhythm",
@@ -79,7 +79,7 @@
                 "tracks":[
                     {
                         "title":"South London Boroughs",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/burial\/south_london\/south_london_boroughs.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/burial\/south_london\/south_london_boroughs.mp3"
                     }
                 ],
                 "name":"South London Boroughs EP",
@@ -97,7 +97,7 @@
                 "tracks":[
                     {
                         "title":"Magic",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/coldplay\/magic\/magic.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/coldplay\/magic\/magic.mp3"
                     }
                 ],
                 "name":"Magic",
@@ -115,15 +115,15 @@
                 "tracks":[
                     {
                         "title":"I Am 300 Tag",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/dj_krush\/krush\/1_am_300_tag.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/dj_krush\/krush\/1_am_300_tag.mp3"
                     },
                     {
                         "title":"Keeping The Motion",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/dj_krush\/krush\/2_keeping_the_motion.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/dj_krush\/krush\/2_keeping_the_motion.mp3"
                     },
                     {
                         "title":"Mixed Nuts",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/dj_krush\/krush\/3_mixed_nuts.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/dj_krush\/krush\/3_mixed_nuts.mp3"
                     }
                 ],
                 "name":"Krush",
@@ -141,7 +141,7 @@
                 "tracks":[
                     {
                         "title":"Turn Down For What?",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/dj_snake_and_lil_john\/turn_down_for_what\/turn_down_for_what.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/dj_snake_and_lil_john\/turn_down_for_what\/turn_down_for_what.mp3"
                     }
                 ],
                 "name":"Turn Down For What?",
@@ -151,7 +151,7 @@
     },
     {
         "artist":"Holy Ghost!",
-        "bio":"Friends since attending elementary school on the Upper West Side of Manhattan, Alex Frankel and Nick Millhiser were members of Automato, a rap group whose last releases, including a self-titled album released in 2003, were produced by the DFA's James Murphy and Tim Goldsworthy. After Automato dissolved, Murphy and Goldsworthy encouraged Frankel and Millhiser to continue pushing toward dance music. Push they did; Frankel and Millhiser co-produced the warm and melodic \u0093Hold On\u0094 with the DFA -- settling on the Bar-Kays-referencing Holy Ghost! just prior to the vinyl pressing stage -- and released it on the DFA label in October 2007. 'I Will Come Back', their second single, didn\u0092t come out until 2009 but made an impact with its video -- a remake of the indelible clip for New Order's \u0093Confusion,\u0094 a snapshot of New York\u0092s clubbing scene (with producer Arthur Baker reprising his role). The four-track Static on the Wire EP followed in 2010, continuing the duo\u0092s uncanny ability to evoke the colorful, layered sound of early- to mid-\u009180s club music. In 2011, Holy Ghost! released a self-titled album that included some of their previously released songs, as well as a guest appearance from the Michael McDonald on the closing 'Some Children'. By that point, Holy Ghost! had also become one of the more prolific remix teams; they had re-worked (in some cases technically covering) tracks by MGMT, Moby, Cut Copy, Phoenix, the Juan MacLean, and Murphy's LCD Soundsystem. Their second album, Dynamics, was released on DFA in 2013.",
+        "bio":"Friends since attending elementary school on the Upper West Side of Manhattan, http:\/\/Alex Frankel and Nick Millhiser were members of Automato, a rap group whose last releases, including a self-titled album released in 2003, were produced by the DFA's James Murphy and Tim Goldsworthy. After Automato dissolved, Murphy and Goldsworthy encouraged Frankel and Millhiser to continue pushing toward dance music. Push they did; Frankel and Millhiser co-produced the warm and melodic \u0093Hold On\u0094 with the DFA -- settling on the Bar-Kays-referencing Holy Ghost! just prior to the vinyl pressing stage -- and released it on the DFA label in October 2007. 'I Will Come Back', their second single, didn\u0092t come out until 2009 but made an impact with its video -- a remake of the indelible clip for New Order's \u0093Confusion,\u0094 a snapshot of New York\u0092s clubbing scene (with producer Arthur Baker reprising his role). The four-track Static on the Wire EP followed in 2010, continuing the duo\u0092s uncanny ability to evoke the colorful, layered sound of early- to mid-\u009180s club music. In 2011, Holy Ghost! released a self-titled album that included some of their previously released songs, as well as a guest appearance from the Michael McDonald on the closing 'Some Children'. By that point, Holy Ghost! had also become one of the more prolific remix teams; they had re-worked (in some cases technically covering) tracks by MGMT, Moby, Cut Copy, Phoenix, the Juan MacLean, and Murphy's LCD Soundsystem. Their second album, Dynamics, was released on DFA in 2013.",
         "picture":"http:\/\/www.esquire.com\/cm\/esquire\/images\/UJ\/esq-holy-ghost-040111-lg.jpg",
         "genre":"Electronic",
         "albums":[
@@ -159,7 +159,7 @@
                 "tracks":[
                     {
                         "title":"Hold On",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/holy_ghost\/hold_on\/hold_on.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/holy_ghost\/hold_on\/hold_on.mp3"
                     }
                 ],
                 "name":"Hold On",
@@ -177,51 +177,51 @@
                 "tracks":[
                     {
                         "title":"God Is Saying This To You",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/1_god_is_saying_this_to_you.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/1_god_is_saying_this_to_you.mp3"
                     },
                     {
                         "title":"My Sympathy",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/2_my_sympathy.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/2_my_sympathy.mp3"
                     },
                     {
                         "title":"Red Apples",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/3_red_apples"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/3_red_apples"
                     },
                     {
                         "title":"Beach On The Moon (Recycled Lyrics)",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/4_beach_on_the_moon.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/4_beach_on_the_moon.mp3"
                     },
                     {
                         "title":"Can't Come",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/5_cant_come.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/5_cant_come.mp3"
                     },
                     {
                         "title":"Overnight KV",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/6_overnight_kv.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/6_overnight_kv.mp3"
                     },
                     {
                         "title":"Prom King",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/7_prom_king.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/7_prom_king.mp3"
                     },
                     {
                         "title":"My Best Friends (Don't Even Pass This)",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/8_my_best_friend.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/8_my_best_friend.mp3"
                     },
                     {
                         "title":"White Riffs",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/9_white_riffs.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/9_white_riffs.mp3"
                     },
                     {
                         "title":"Songs For John In D",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/10_songs_for_john_in_d.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/10_songs_for_john_in_d.mp3"
                     },
                     {
                         "title":"Doctor Orgatron",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/11_doctor_orgatron.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/11_doctor_orgatron.mp3"
                     },
                     {
                         "title":"Frip Job",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/12_frip_job.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/kurt_vile\/god_is_saying_this_to_you\/12_frip_job.mp3"
                     }
                 ],
                 "name":"God Is Saying This To You",
@@ -239,23 +239,23 @@
                 "tracks":[
                     {
                         "title":"You've Got Me Wonderin' Now",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/1_youve_got_me_wonderin_now.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/1_youve_got_me_wonderin_now.mp3"
                     },
                     {
                         "title":"Descend (The Way)",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/2_descend.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/2_descend.mp3"
                     },
                     {
                         "title":"The More It Works",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/3_the_more_it_works.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/3_the_more_it_works.mp3"
                     },
                     {
                         "title":"Fall On Yr Face",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/4_fall_on_yr_face.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/4_fall_on_yr_face.mp3"
                     },
                     {
                         "title":"He's Seeing Path",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/5_hes_seeing_path.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/parquet_courts\/tally_all_the_things_that_you_broke\/5_hes_seeing_path.mp3"
                     }
                 ],
                 "name":"Tally All The Things That You Broke",
@@ -273,11 +273,11 @@
                 "tracks":[
                     {
                         "title":"Busted",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/the_black_keys\/the_big_come_up\/1_busted.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/the_black_keys\/the_big_come_up\/1_busted.mp3"
                     },
                     {
                         "title":"Do The Rump",
-                        "src":"alexmlewis.com\/school\/n222\/songs\/the_black_keys\/the_big_come_up\/2_do_the_rump.mp3"
+                        "src":"http:\/\/alexmlewis.com\/school\/n222\/songs\/the_black_keys\/the_big_come_up\/2_do_the_rump.mp3"
                     }
                 ],
                 "name":"The Big Come Up",
