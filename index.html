@@ -7,15 +7,9 @@
     <link rel="stylesheet" href="stylesheets/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700|Homemade+Apple' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-resource.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-resource.min.js"></script>
 
 </head>
 <body ng-app="jukeroxApp" ng-controller="mainCtrl">
@@ -73,22 +67,22 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-1 col-lg-offset-4 col-md-1 col-md-offset-4 col-sm-1 col-sm-offset-4 col-xs-1 col-xs-offset-4">
+            <div class="col-lg-1 col-lg-offset-4 col-md-1 col-md-offset-4 col-sm-1 col-sm-offset-4 col-xs-2 col-xs-offset-2">
                 <button class="btn btn-primary">
                 <span class="glyphicon glyphicon-step-backward"  id="back" ng-click="track_queue.prev()"></span>
                 </button>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
                 <button class="btn btn-danger">
                 <span  class="glyphicon glyphicon-stop" id="stop" ng-click="player.stop()"></span>
                 </button>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
                 <button class="btn btn-primary">
                 <span class="glyphicon glyphicon-play" id="play" ng-click="track_queue.play_track()"></span>
                 </button>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
                 <button class="btn btn-primary">
                 <span class="glyphicon glyphicon-step-forward" id="next" ng-click="track_queue.next()"></span>
                 </button>
@@ -104,7 +98,7 @@
     </div>
 </div>
 
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controller.js"></script>
 
