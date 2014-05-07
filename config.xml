@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.devworkshop.ListApp" version="0.0.1"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>JukeRox</name>
+    <description>This is a Music App built for School.</description>
+    <author href="http://devworkshop.org" email="todd@devworkshop.org">Todd Shelton</author>
+
+    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="permissions" value="none"/>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
+
+    <icon src="icon.png" />
+
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
